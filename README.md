@@ -19,4 +19,5 @@ Run the Spring Boot project
 
 Everything at http://localhost:8080.
 
-
+## Notice
+You need to set up your own API key to run this app.
