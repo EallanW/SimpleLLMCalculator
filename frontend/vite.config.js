@@ -6,6 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', // Forces Vite to listen on all local addresses
-    port: 5173       // Ensures it stays on port 5173
+    port: 5173,       // Ensures it stays on port 5173
+    proxy: { '/calc': 'http://localhost:8080' }
+  },
+  build: {
+    outDir: '../src/main/resources/static',
+    emptyOutDir: false
   }
 })
